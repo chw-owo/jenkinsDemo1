@@ -1,19 +1,14 @@
 pipeline {
   agent any
   stages{
-    stage('Build'){
+    stage('first'){
       steps{
         echo 'Building...'
       }
     }
-    stage('Test'){
+    stage('second'){
       steps{
         build 'gitDemo1'
-      }
-    }
-    stage('Deploy'){
-      steps{
-        echo 'Deploying...'
       }
     }
     post{
