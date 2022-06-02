@@ -10,10 +10,11 @@ pipeline {
       steps{
         build 'gitDemo1'
       }
-    }
-    post{
+    } 
+  }
+  post{
       always{
         echo 'pipeline done'
       }
     }
-  }
+}
