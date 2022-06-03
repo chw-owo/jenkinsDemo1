@@ -3,21 +3,11 @@ pipeline {
     label 'demoAgent'
   }
   stages{
-    stage('first'){
+    stage('Build'){
       steps{
-        echo 'Building...'
+        echo '$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S)'
       }
     }
-    stage('second'){
-      steps{
-        build 'gitDemo1'
-      }
-    } 
-    stage('third'){
-      steps{
-        build 'demo1'
-      }
-    } 
   }
   post{
       always{
