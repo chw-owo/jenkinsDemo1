@@ -11,6 +11,11 @@ pipeline {
         build 'gitDemo1'
       }
     } 
+    stage('third'){
+      steps{
+        build 'demo1'
+      }
+    } 
   }
   post{
       always{
