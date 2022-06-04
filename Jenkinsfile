@@ -3,7 +3,7 @@ pipeline {
     label 'demoAgent'
   }
   stages{
-    stage('Build'){
+    stage('test'){
       steps{
         echo '$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S)'
       }
