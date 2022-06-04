@@ -8,11 +8,6 @@ pipeline {
         echo '$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S)'
       }
     }
-    stage('test2'){
-      steps{
-        echo 'hi'
-      }
-    }
   }
   post{
       always{
