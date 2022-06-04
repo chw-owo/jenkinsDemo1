@@ -5,7 +5,7 @@ pipeline {
   stages{
     stage('test'){
       steps{
-        echo '$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M):$(date +%S)'
+        echo '20220605'
       }
     }
   }
